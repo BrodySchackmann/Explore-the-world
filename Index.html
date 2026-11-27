@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f6ff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1e6091;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        h2 {
+            color: #1e6091;
+            margin-top: 35px;
+        }
+
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .country {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .flag {
+            font-size: 55px;
+        }
+
+        .country h3 {
+            color: #1e6091;
+        }
+
+        footer {
+            background-color: #1e6091;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .countries {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌍 Explore the World</h1>
+        <p>Discover different countries, cultures and traditions!</p>
+    </header>
+
+    <h2>Choose a Country to Explore</h2>
+
+    <div class="countries">
+
+        <div class="country">
+            <div class="flag">🇧🇹</div>
+            <h3>Bhutan</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇰🇬</div>
+            <h3>Kyrgyzstan</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇺🇿</div>
+            <h3>Uzbekistan</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇲🇳</div>
+            <h3>Mongolia</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇱🇦</div>
+            <h3>Laos</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇲🇬</div>
+            <h3>Madagascar</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇳🇦</div>
+            <h3>Namibia</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇱🇸</div>
+            <h3>Lesotho</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇸🇹</div>
+            <h3>São Tomé and Príncipe</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇧🇼</div>
+            <h3>Botswana</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇸🇷</div>
+            <h3>Suriname</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇬🇾</div>
+            <h3>Guyana</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇧🇿</div>
+            <h3>Belize</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇻🇺</div>
+            <h3>Vanuatu</h3>
+        </div>
+
+        <div class="country">
+            <div class="flag">🇵🇼</div>
+            <h3>Palau</h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Explore the World | Discover Something New 🌍</p>
+    </footer>
+
+</body>
+</html>
