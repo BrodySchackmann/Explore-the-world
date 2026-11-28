@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Laos</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5ff;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    padding: 25px 5%;
+}
+
+h1 {
+    color: #21628f;
+    font-size: 36px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 10px 5%;
+    align-items: flex-start;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.country-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #21628f;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-block;
+    background: #21628f;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 25px 5%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🇱🇦 Laos</h1>
+</header>
+
+<div class="container">
+
+    <div class="left">
+        <img class="country-image"
+        src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220"
+        alt="Landscape in Laos">
+    </div>
+
+    <div class="right">
+        <h2>About Laos</h2>
+
+        <p>
+        Laos is a landlocked country in Southeast Asia.
+        It is surrounded by China, Vietnam, Cambodia,
+        Thailand and Myanmar. Its capital city is Vientiane.
+        Laos is known for its mountains, rivers and Buddhist temples.
+        </p>
+
+        <h2>5 Interesting Facts About Laos</h2>
+
+        <ol>
+            <li>Vientiane is the capital city of Laos.</li>
+            <li>Laos is the only landlocked country in Southeast Asia.</li>
+            <li>The Mekong River is one of its most important rivers.</li>
+            <li>Luang Prabang is a UNESCO World Heritage Site.</li>
+            <li>The Plain of Jars contains thousands of ancient stone jars.</li>
+        </ol>
+    </div>
+
+</div>
+
+<a href="index.html" class="back-button">← Back to Homepage</a>
+
+</body>
+</html>
