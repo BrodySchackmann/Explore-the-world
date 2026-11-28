@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Bhutan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Bhutan</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f0f6ff;
-            text-align: center;
-            color: #333;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5ff;
+    margin: 0;
+    color: #333;
+}
 
-        header {
-            background-color: #1e6091;
-            color: white;
-            padding: 30px;
-        }
+header {
+    padding: 25px 5%;
+}
 
-        .content {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-        }
+h1 {
+    color: #21628f;
+    font-size: 36px;
+    margin: 0;
+}
 
-        img {
-            width: 100%;
-            max-width: 550px;
-            border-radius: 12px;
-        }
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 10px 5%;
+    align-items: flex-start;
+}
 
-        .facts, .introduction {
-            background-color: white;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: left;
-            line-height: 1.8;
-            margin-bottom: 25px;
-        }
+.left {
+    width: 50%;
+}
 
-        h2 {
-            color: #1e6091;
-        }
+.right {
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
 
-        a {
-            display: inline-block;
-            margin: 25px;
-            padding: 12px 22px;
-            background-color: #1e6091;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-    </style>
+.country-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #21628f;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-block;
+    background: #21628f;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 25px 5%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>🇧🇹 Explore Bhutan</h1>
-    <p>Discover the culture, geography and traditions of Bhutan!</p>
+    <h1>🇧🇹 Bhutan</h1>
 </header>
 
-<div class="content">
+<div class="container">
 
-    <h2>About Bhutan</h2>
-    <div class="introduction">
+    <div class="left">
+        <img class="country-image"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Paro_Taktsang.jpg"
+        alt="Tiger's Nest Monastery in Bhutan">
+    </div>
+
+    <div class="right">
+        <h2>About Bhutan</h2>
+
+        <p>
         Bhutan is a small landlocked country in South Asia,
         located in the eastern Himalayas between India and China.
         Its capital city is Thimphu. The country is famous for
         its beautiful mountains, Buddhist monasteries and
         traditional culture.
-    </div>
+        </p>
 
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paro_Taktsang.jpg"
-     alt="Tiger's Nest Monastery in Bhutan">
-   
-    <h2>5 Interesting Facts About Bhutan</h2>
+        <h2>5 Interesting Facts About Bhutan</h2>
 
-    <div class="facts">
         <ol>
             <li>Bhutan is located in the Himalayan mountains.</li>
             <li>The capital city of Bhutan is Thimphu.</li>
@@ -90,9 +113,9 @@
         </ol>
     </div>
 
-    <a href="index.html">← Back to Homepage</a>
-
 </div>
+
+<a href="index.html" class="back-button">← Back to Homepage</a>
 
 </body>
 </html>
