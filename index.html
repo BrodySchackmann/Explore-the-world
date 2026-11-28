@@ -55,13 +55,23 @@
         .country h3 {
             color: #1e6091;
         }
+a.country {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+}
 
-        footer {
-            background-color: #1e6091;
-            color: white;
-            padding: 15px;
-            margin-top: 30px;
-        }
+a.country:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1e6091;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
 
         @media (max-width: 600px) {
             .countries {
@@ -82,25 +92,29 @@
 
     <div class="countries">
 
-        <div class="country">
-            <div class="flag">🇧🇹</div>
-            <h3>Bhutan</h3>
-        </div>
+        <a href="bhutan.html" class="country">
+    <div class="flag">🇧🇹</div>
+    <h3>Bhutan</h3>
+    <p>Click to explore Bhutan</p>
+</a>
 
-        <div class="country">
-            <div class="flag">🇰🇬</div>
-            <h3>Kyrgyzstan</h3>
-        </div>
+      <a href="kyrgyzstan.html" class="country">
+    <div class="flag">🇰🇬</div>
+    <h3>Kyrgyzstan</h3>
+    <p>Click to explore Kyrgyzstan</p>
+</a>
 
-        <div class="country">
-            <div class="flag">🇺🇿</div>
-            <h3>Uzbekistan</h3>
-        </div>
+       <a href="uzbekistan.html" class="country">
+    <div class="flag">🇺🇿</div>
+    <h3>Uzbekistan</h3>
+    <p>Click to explore Uzbekistan</p>
+</a>
 
-        <div class="country">
-            <div class="flag">🇲🇳</div>
-            <h3>Mongolia</h3>
-        </div>
+      <a href="mongolia.html" class="country">
+    <div class="flag">🇲🇳</div>
+    <h3>Mongolia</h3>
+    <p>Click to explore Mongolia</p>
+</a>
 
         <div class="country">
             <div class="flag">🇱🇦</div>
