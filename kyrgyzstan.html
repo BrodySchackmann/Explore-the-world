@@ -1,87 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Kyrgyzstan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Kyrgyzstan</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f0f6ff;
-            text-align: center;
-            color: #333;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5ff;
+    margin: 0;
+    color: #333;
+}
 
-        header {
-            background-color: #1e6091;
-            color: white;
-            padding: 30px;
-        }
+header {
+    padding: 25px 5%;
+}
 
-        .content {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-        }
+h1 {
+    color: #21628f;
+    font-size: 36px;
+    margin: 0;
+}
 
-        img {
-            width: 100%;
-            max-width: 550px;
-            border-radius: 12px;
-        }
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 10px 5%;
+    align-items: flex-start;
+}
 
-        .facts, .introduction {
-            background-color: white;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: left;
-            line-height: 1.8;
-            margin-bottom: 25px;
-        }
+.left {
+    width: 50%;
+}
 
-        h2 {
-            color: #1e6091;
-        }
+.right {
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
 
-        a {
-            display: inline-block;
-            margin: 25px;
-            padding: 12px 22px;
-            background-color: #1e6091;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-    </style>
+.country-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #21628f;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-block;
+    background: #21628f;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 25px 5%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>🇰🇬 Explore Kyrgyzstan</h1>
-    <p>Discover the mountains, culture and traditions of Kyrgyzstan!</p>
+    <h1>🇰🇬 Kyrgyzstan</h1>
 </header>
 
-<div class="content">
+<div class="container">
 
-    <h2>About Kyrgyzstan</h2>
-    <div class="introduction">
+    <div class="left">
+        <img class="country-image"
+        src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Ala-Archa_National_Park_in_Kyrgyzstan.jpg"
+        alt="Snowy mountains in Ala Archa National Park, Kyrgyzstan">
+    </div>
+
+    <div class="right">
+        <h2>About Kyrgyzstan</h2>
+
+        <p>
         Kyrgyzstan is a landlocked country in Central Asia.
         It borders Kazakhstan, Uzbekistan, Tajikistan and China.
         Its capital city is Bishkek. Much of the country is
         covered by the Tian Shan mountains, making it famous
         for its beautiful mountain landscapes and lakes.
-    </div>
- 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Ala-Archa_National_Park_in_Kyrgyzstan.jpg"
-     alt="Snowy mountains in Ala Archa National Park, Kyrgyzstan"
-     class="country-image">
+        </p>
 
-    <h2>5 Interesting Facts About Kyrgyzstan</h2>
+        <h2>5 Interesting Facts About Kyrgyzstan</h2>
 
-    <div class="facts">
         <ol>
             <li>The capital city of Kyrgyzstan is Bishkek.</li>
             <li>The national language is Kyrgyz, and Russian is also widely used.</li>
@@ -91,12 +113,9 @@
         </ol>
     </div>
 
-    <a href="index.html">← Back to Homepage</a>
-
 </div>
 
-</body>
-</html>
+<a href="index.html" class="back-button">← Back to Homepage</a>
 
 </body>
 </html>
